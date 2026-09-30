@@ -1,0 +1,62 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Infinite",
+  "description": "Explorer une fractale de Mandelbrot : centre, zoom, précision et palette. Rendu statique, sans animation permanente.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "none"
+  },
+  "settings": [
+    {
+      "id": "centerX",
+      "type": "range",
+      "label": "Centre horizontal",
+      "default": -0.65,
+      "min": -2,
+      "max": 1,
+      "step": 0.01
+    },
+    {
+      "id": "centerY",
+      "type": "range",
+      "label": "Centre vertical",
+      "default": 0,
+      "min": -1.5,
+      "max": 1.5,
+      "step": 0.01
+    },
+    {
+      "id": "zoom",
+      "type": "range",
+      "label": "Zoom",
+      "default": 1,
+      "min": 0.5,
+      "max": 20,
+      "step": 0.1
+    },
+    {
+      "id": "iterations",
+      "type": "range",
+      "label": "Précision",
+      "default": 80,
+      "min": 24,
+      "max": 160,
+      "step": 8
+    },
+    {
+      "id": "background",
+      "type": "color",
+      "label": "Ombre",
+      "default": "#0b151b"
+    },
+    {
+      "id": "accent",
+      "type": "color",
+      "label": "Lumière",
+      "default": "#b89b78"
+    }
+  ]
+}
